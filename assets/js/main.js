@@ -9,7 +9,19 @@ Il recap dei dati e l'output del prezzo finale va stampato in pagina (formattato
 
 // Chiedi all'utente i dati
 
-var user_name = document.getElementById(`user_name`)
-var km_da_percorrere = document.getElementById(`km_da_percorrere`)
-var user_age = document.getElementById (`user_age`)
+const button = document.getElementById(`save_data`);
+
+button.addEventListener (`click`, 
+function(){
+    console.log(`click`)
+    var user_name = document.getElementById(`user_name`).value;
+    var km_da_percorrere = document.getElementById(`km_da_percorrere`).value;
+    console.log(`user_name`)
+})
+
+;
+
+
+
+
 
