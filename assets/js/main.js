@@ -15,19 +15,25 @@ button.addEventListener (`click`,
 function(){
     console.log(`click`)
     var user_name = document.getElementById(`user_name`).value;
-    var km_da_percorrere = document.getElementById(`km_da_percorrere`).value ;
+    var km_da_percorrere = Number(document.getElementById(`km_da_percorrere`).value);
     var user_age = document.querySelector(`.user_age`).value;
     console.log(user_name , km_da_percorrere , user_age)
 })
 
-// Traformare 
-
-
-
 // Calcolare il prezzo del biglietto per chilometro
 
 const prezzo_per_km = km_da_percorrere * 0.21;
-console.log(prezzo_per_km);
+console.log(prezzo_per_km)
+
+// Trasformare stringhe in valori numerici
+// if (user_age == `under 18`) {
+     
+// } else if (user_age == `over 65`) {
+//     user_age = 67;
+// }
+
+
+
 
 // Trasformare gli sconti da valori percentuali a valori decimali
 
