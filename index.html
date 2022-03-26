@@ -19,11 +19,11 @@
         <link rel="stylesheet" href="./assets/css/style.css">
       </head>
 
-      <body class="bg-danger text-center">
+      <body class="bg-danger">
         
-        <section class="price">
+        <section class="price text-center">
           <h2 class="text-uppercase text-white">calcola il prezzo del tuo biglietto</h2>
-          <div class="container price rounded-3 bg-white py-3">
+          <div class="container price rounded-3 bg-white p-5">
             <div class="row row-cols-3">
               <div class="col">
                 <div class="card_type">
@@ -76,28 +76,46 @@
       </section>
       <!-- /.price -->
                     
-      <section class="ticket pt-5">
+      <section class="ticket pt-5 text-center">
         <h2 class="text-white">IL TUO BIGLIETTO</h2>
-        <div class="container bg-white">
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">Offerta</th>
-                <th scope="col">Carrozza</th>
-                <th scope="col">Codice CP</th>
-                <th scope="col">Costo Biglietto</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td class="offerta"></td>
-                <td class="carrozza"></td>
-                <td class="codice"></td>
-                <td class="prezzo"></td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="container bg-white text-start p-5">
+          <h4 class="text-uppercase">dettaglio del passeggero</h4>
+          <div class="row row-cols-2 border-top border-bottom border-1 border-dark">
+            <div class="col bg-secondary w-25">
+              <div class="passenger p-3">
+                <h4 class="text-uppercase">nome del passeggero:</h4>
+                <div class="passenger_name fs-4 fw-bold"></div>
+                <!-- /.passenger_name -->
+              </div>
+              <!-- /.passenger -->
+            </div>
+            <!-- /.col-4 -->
+            <div class="col w-75">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">Offerta</th>
+                    <th scope="col">Carrozza</th>
+                    <th scope="col">Codice CP</th>
+                    <th scope="col">Costo Biglietto</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="offerta pt-5 fs-5"></td>
+                    <td class="carrozza pt-5 fs-5"></td>
+                    <td class="codice pt-5 fs-5"></td>
+                    <td class="prezzo pt-5 fs-5"></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- /.col-8 -->
+          </div>
+          <!-- /.row -->
+         
         </div>
+        <!-- /.container -->
       </section>
       <!-- /.ticket -->
                       

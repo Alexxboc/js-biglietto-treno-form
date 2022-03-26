@@ -1,1 +1,13 @@
+/* Section price */
 
+.price input, .price select {
+    border: 1.5px solid #dc3545;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+/* Section ticket */
+
+.ticket .row {
+    height: 200px;
+}
