@@ -1,6 +1,6 @@
 /* Section price */
 
-.price input, .price select {
+.card_type input, .price select {
     border: 1.5px solid #dc3545;
     text-align: center;
     padding: 0.5rem;

@@ -59,7 +59,7 @@ elementPasseggero.innerHTML = user_name;
 
 // Stampa sul biglietto il nuemero della carrozza
 const elementCarrozza = document.querySelector(`.carrozza`);
-elementCarrozza.innerHTML = Math.floor(Math.random() * 10);
+elementCarrozza.innerHTML = Math.floor(Math.random() * 10) + 1;
 
 // Stampa sul biglietto il codice CP
 const elementCodice = document.querySelector(`.codice`);
@@ -68,6 +68,33 @@ elementCodice.innerHTML = Math.floor(Math.random() * 10000) + 1;
 // Stampa sul biglietto il prezzo
 const elementPrezzo = document.querySelector(`.prezzo`);
 elementPrezzo.innerHTML = `€ ${prezzo_finale.toFixed(2)}`;
+})
+
+// Creare evento di rest al click del tasto annulla
+
+const buttonReset = document.getElementById(`reset`);
+buttonReset.addEventListener(`click`, 
+function(){
+
+// Azzera campo offerta
+const elementAzzeraOfferta = document.querySelector(`.offerta`);
+elementAzzeraOfferta.innerHTML = ``;
+
+// Azzera campo nome passeggero
+const elementAzzeraPasseggero = document.querySelector(`.passenger_name`);
+elementAzzeraPasseggero.innerHTML = ``;
+
+// Azzera campo carrozza
+const elementAzzeraCarrozza = document.querySelector(`.carrozza`);
+elementAzzeraCarrozza.innerHTML = ``;
+
+// Azzera campo codice
+const elementAzzeraCodice = document.querySelector(`.codice`);
+elementAzzeraCodice.innerHTML = ``;
+
+// Azzera campo Costo biglietto
+const elementAzzeraPrezzo = document.querySelector(`.prezzo`);
+elementAzzeraPrezzo.innerHTML = ``;
 })
 
 
