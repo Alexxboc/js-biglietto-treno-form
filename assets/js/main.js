@@ -11,31 +11,42 @@ Il recap dei dati e l'output del prezzo finale va stampato in pagina (formattato
 
 const button = document.getElementById(`save_data`);
 
+
+
 button.addEventListener (`click`, 
 function(){
     console.log(`click`)
-    var user_name = document.getElementById(`user_name`).value;
-    var km_da_percorrere = Number(document.getElementById(`km_da_percorrere`).value);
-    var user_age = document.querySelector(`.user_age`).value;
-    console.log(user_name , km_da_percorrere , user_age)
+    let user_name = document.getElementById(`name`).value;
+    let km_da_percorrere = Number(document.getElementById("percorso").value);
+    let user_age = document.getElementById(`fascia_eta`).value;
+    
+    console.log(user_name , km_da_percorrere , user_age);
 })
 
-// Calcolare il prezzo del biglietto per chilometro
+// Calcolare il prezzo del biglietto standard
 
-const prezzo_per_km = km_da_percorrere * 0.21;
-console.log(prezzo_per_km)
+const prezzo_standard = km_da_percorrere * 0.21;
 
-// Trasformare stringhe in valori numerici
-// if (user_age == `under 18`) {
-     
-// } else if (user_age == `over 65`) {
-//     user_age = 67;
-// }
+// Calcoloare prezzo finale  
+
+let prezzo_finale;
+
+if (user_age == `under 18`) {
+     prezzo_finale = prezzo_standard - (prezzo_standard * 0.2);
+    
+} else if (user_age == `over 65`) {
+     prezzo_finale = prezzo_standard - (prezzo_standard * 0.4);
+} else {
+    prezzo_finale = prezzo_standard;
+}
+
+console.log(`Il prezzo del tuo biglietto è di ${prezzo_finale.toFixed(2)} €`)
 
 
 
 
-// Trasformare gli sconti da valori percentuali a valori decimali
+
+
 
 
 
